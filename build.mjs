@@ -106,7 +106,7 @@ const ART = {
 const art = (key, w, h) => `<svg class="art" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" preserveAspectRatio="xMidYMid slice">${ART[key]()}</svg>`;
 
 // ---------- world map ----------
-const MAP_W = 358, LAT0 = 80, LAT1 = -58, K = MAP_W / 360, MAP_H = Math.round((LAT0 - LAT1) * K);
+const MAP_W = 306, LAT0 = 80, LAT1 = -58, K = MAP_W / 360, MAP_H = Math.round((LAT0 - LAT1) * K);
 const proj = (lon, lat) => [(lon + 180) * K, (LAT0 - Math.max(LAT1, Math.min(LAT0, lat))) * K];
 function landPath() {
   const gj = JSON.parse(readFileSync(LAND, 'utf8'));
@@ -189,19 +189,19 @@ body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#15171c;posit
 .tile .deck{font-size:12.5px;line-height:16px;margin:2px 8px 0;color:#33363d}
 .one{white-space:nowrap;overflow:hidden}
 #bottom{position:absolute;left:12px;top:725px;width:1000px;height:244px;display:flex;gap:10px}
-#mapbox{width:372px;flex:none;background:#fffdf8;border:1px solid #d8d0bf;border-radius:6px;padding:5px 6px}
+#mapbox{width:320px;flex:none;background:#fffdf8;border:1px solid #d8d0bf;border-radius:6px;padding:5px 6px}
 .h4{font-size:11.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#13233f;margin-bottom:3px}
 #legend{font-size:11px;color:#444;margin-top:3px}
 #pills{margin-top:4px}
-#check{position:absolute;left:12px;top:972px;width:1000px;height:30px;background:#fff4e0;border:1px solid #d9b26a;border-radius:4px;padding:2px 8px;font-size:11px;line-height:12.5px;color:#3d3d3d;overflow:hidden}
+#check{position:absolute;left:12px;top:974px;width:1000px;height:26px;background:#fff4e0;border:1px solid #d9b26a;border-radius:4px;padding:0 8px;font-size:11.5px;line-height:24px;color:#3d3d3d;overflow:hidden;white-space:nowrap}
 #check b{color:#8a4b00}
 #briefs{flex:1;background:#fffdf8;border:1px solid #d8d0bf;border-radius:6px;padding:6px 8px}
 #briefs{min-width:0}
 #cols{display:flex;gap:12px}
 #cols ul{list-style:none;flex:1 1 0;min-width:0}
-#cols li{font-family:"Avenir Next Condensed","Arial Narrow",sans-serif;font-size:13px;line-height:18px;height:18px;color:#222}
+#cols li{font-family:"Avenir Next Condensed","Arial Narrow",sans-serif;font-size:14.5px;line-height:26px;height:26px;color:#222;border-bottom:1px solid #eee7d8}
 #cols li b{font-weight:700;color:#000;margin-right:2px}
-.bn{display:inline-block;min-width:19px;height:16px;border-radius:8px;color:#fff;font:700 10.5px/16px "Helvetica Neue",Arial,sans-serif;text-align:center;margin-right:5px;vertical-align:1px}
+.bn{display:inline-block;min-width:21px;height:18px;border-radius:9px;color:#fff;font:700 11.5px/18px "Helvetica Neue",Arial,sans-serif;text-align:center;margin-right:5px;vertical-align:1px}
 #foot{position:absolute;left:12px;right:12px;top:1003px;height:20px;font-size:10.5px;line-height:20px;color:#4a4a4a;white-space:nowrap;overflow:hidden}
 #fit{display:none}
 </style></head><body>
@@ -217,7 +217,7 @@ body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#15171c;posit
   <div id="pills">${REGIONS.filter((r) => counts[r]).map((r) => `<span class="pill" style="background:${COLOR[r]}">${r} ${counts[r]}</span>`).join('')}</div></div>
  <div id="briefs"><div class="h4">Also on Thursday 19 November</div><div id="cols"><ul>${S.briefs.slice(0, half).map(brief).join('')}</ul><ul>${S.briefs.slice(half).map(brief).join('')}</ul></div></div>
 </div>
-<div id="check"><b>DATE CHECK — earlier days’ news, left out:</b> ${S.dateCheck.map(esc).join(' · ')}</div>
+<div id="check" class="one"><b>DATE CHECK — left out as earlier news:</b> ${S.dateCheck.map(esc).join(' · ')}</div>
 <div id="foot" class="one">Every story was reported on Thursday 19 November 2026 (any time zone); disputed claims are attributed. Sources: ${esc(S.sources)}.</div>
 <pre id="fit"></pre>
 <script>

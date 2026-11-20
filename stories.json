@@ -11,11 +11,9 @@
   ],
   "dateCheck": [
     "Trump lands in China (18 Nov)",
-    "Anthropic prices its IPO at $83 (18 Nov)",
-    "Haiti president plot verdict, Miami (18 Nov)",
-    "US–Venezuela military pact (18 Nov)",
-    "Van Gogh sells for $190.4m (18 Nov)",
-    "Crimean Bridge road section collapses (17 Nov)"
+    "Anthropic IPO priced at $83 (18 Nov)",
+    "Van Gogh’s $190.4m sale (18 Nov)",
+    "Crimean Bridge road collapse (17 Nov)"
   ],
   "sources": "BBC, Guardian, NYT, DW, CBS, NPR, ABC Australia, RNZ, MercoPress, Addis Standard",
   "leads": [
@@ -157,27 +155,19 @@
   "briefs": [
     { "region": "Europe", "place": "Berlin", "lat": 52.52, "lon": 13.4, "text": "Allies back Kyiv, seek seat at peace talks", "by": "DW", "src": ["https://www.dw.com/en/european-leaders-present-united-front-in-push-for-peace-in-ukraine/live-79986520"] },
     { "region": "Europe", "place": "Denmark", "lat": 55.68, "lon": 12.57, "text": "MPs back US–Greenland security deal", "by": "CBS", "src": ["https://www.cbsnews.com/news/greenland-security-deal-us-denmark-danish-lawmakers/"] },
-    { "region": "N. America", "place": "Greenland", "lat": 64.18, "lon": -51.72, "text": "Votes to move clocks an hour nearer US", "by": "NYT", "src": ["https://www.nytimes.com/2026/11/19/world/europe/greenland-time-zone-change-us.html"] },
-    { "region": "Europe", "place": "EU", "lat": 50.85, "lon": 4.35, "text": "Commission targeted by AI-made cyberattack", "by": "DW", "src": ["https://www.dw.com/en/eu-commission-confirms-it-was-targeted-in-cyberattack-using-ai-tools/a-79993016"] },
     { "region": "Europe", "place": "UK", "lat": 51.51, "lon": -0.13, "text": "Covid inquiry: test-and-trace ‘doomed to fail’", "by": "BBC", "src": ["https://www.bbc.co.uk/news/articles/crx20q8ql4gwo"] },
     { "region": "Middle East", "place": "Riyadh", "lat": 24.71, "lon": 46.68, "text": "Houthi attack hits Saudi wealth fund tower", "by": "NYT", "src": ["https://www.nytimes.com/2026/11/19/world/middleeast/saudi-pif-riyadh-tower-houthis-attack.html"] },
     { "region": "N. America", "place": "US Senate", "lat": 38.9, "lon": -77.04, "text": "Republicans block curbs on Iran war", "by": "NYT", "src": ["https://www.nytimes.com/2026/11/19/us/politics/senate-iran-war-powers-trump.html"] },
     { "region": "Asia", "place": "Bangladesh", "lat": 23.81, "lon": 90.41, "text": "Blasts, arson in Hasina shutdown", "by": "Guardian", "src": ["https://www.theguardian.com/world/2026/nov/19/bangladesh-violent-protest-sheikh-hasina-planned-return"] },
-    { "region": "Africa", "place": "South Africa", "lat": -23.9, "lon": 29.45, "text": "Race to replant 5 dug-up baobabs", "by": "Guardian", "src": ["https://www.theguardian.com/environment/2026/nov/19/baobab-five-trees-south-africa-dug-up-export-blocked-georgia-aoe"] },
+    { "region": "Africa", "place": "S. Africa", "lat": -23.9, "lon": 29.45, "text": "Race to replant dug-up baobabs", "by": "Guardian", "src": ["https://www.theguardian.com/environment/2026/nov/19/baobab-five-trees-south-africa-dug-up-export-blocked-georgia-aoe"] },
     { "region": "Africa", "place": "Ethiopia", "lat": 8.5, "lon": 39.5, "text": "Red Cross: Oromia crisis worse", "by": "Addis Std", "src": ["https://allafrica.com/stories/202611190303.html"] },
     { "region": "Africa", "place": "Kenya", "lat": -1.29, "lon": 36.82, "text": "Jepchirchir gets 3-year doping ban", "by": "BBC", "src": ["https://www.bbc.co.uk/sport/athletics/articles/cv5y1e1zle88o", "https://www.abc.net.au/news/2026-11-19/sydney-marathon-winner-peres-jepchirchir-three-year-doping-ban/107405856"] },
     { "region": "Global", "place": "IMF", "text": "Public debt nearing 100% of world GDP", "by": "MercoPress", "src": ["https://en.mercopress.com/2026/11/19/imf-warns-global-debt-will-soon-reach-100-of-gdp-the-highest-since-world-war-ii"] },
     { "region": "N. America", "place": "California", "lat": 37.4, "lon": -122.0, "text": "Probe into Nvidia AI chips in China", "by": "BBC", "src": ["https://www.bbc.co.uk/news/articles/cqn70vxp5p4no"] },
-    { "region": "N. America", "place": "JPMorgan", "text": "Customer data exposed in hack", "by": "NYT", "src": ["https://www.nytimes.com/2026/11/19/business/jpmorgan-chase-customer-data-breach.html"] },
     { "region": "Oceania", "place": "Pacific", "lat": -14.27, "lon": -170.7, "text": "US leases seabed off Samoa to miner", "by": "NYT", "src": ["https://www.nytimes.com/2026/11/19/climate/metals-company-seafloor-mining-auction.html"] },
     { "region": "Asia", "place": "Japan", "lat": 35.68, "lon": 139.69, "text": "Russian seizure costs Japan Tobacco $8.6bn", "by": "NYT", "src": ["https://www.nytimes.com/2026/11/19/business/russia-japan-tobacco-loss.html"] },
     { "region": "Oceania", "place": "New Zealand", "lat": -34.9, "lon": 173.0, "text": "Sperm whales die in mass stranding", "by": "RNZ", "src": ["https://www.rnz.co.nz/news/environment/2704224/more-sperm-whales-die-after-mass-stranding-at-ninety-mile-beach"] },
-    { "region": "Global", "place": "Science", "text": "Potatoes grown in simulated Moon soil", "by": "Guardian", "src": ["https://www.theguardian.com/science/2026/nov/19/potatoes-moon-base-nasa"] },
-    { "region": "N. America", "place": "Cincinnati", "lat": 39.1, "lon": -84.5, "text": "Hippo Fiona dies after swallowing hat", "by": "BBC", "src": ["https://www.bbc.co.uk/news/articles/cwz0k3172xzko"] },
-    { "region": "N. America", "place": "Baseball", "text": "Trump pardons the late Pete Rose", "by": "BBC", "src": ["https://www.bbc.co.uk/news/articles/cx1l0pm7l9jmo"] },
-    { "region": "Europe", "place": "Football", "lat": 45.76, "lon": 4.84, "text": "Lyon beat Arsenal 2-0 (women’s CL)", "by": "BBC", "src": ["https://www.bbc.co.uk/sport/football/videos/c3dx1n4xp1xxo"] },
-    { "region": "Middle East", "place": "U-17 World Cup", "lat": 25.29, "lon": 51.53, "text": "Australia beat Argentina 2-0", "by": "ABC", "src": ["https://www.abc.net.au/news/2026-11-20/australia-defeats-argentina-under-17-world-cup/107407632"] },
-    { "region": "Asia", "place": "AFC awards", "lat": 13.76, "lon": 100.5, "text": "Foord is international player of year", "by": "ABC", "src": ["https://www.abc.net.au/news/2026-11-20/matildas-star-foord-named-best-international-player-in-asia/107407140"] },
-    { "region": "Europe", "place": "Darts", "lat": 52.59, "lon": -2.13, "text": "Unseeded Sykes knocks out Humphries", "by": "BBC", "src": ["https://www.bbc.co.uk/sport/darts/articles/ckzd9n5996zno"] }
+    { "region": "Global", "place": "Science", "text": "Potatoes grown in mock Moon soil", "by": "Guardian", "src": ["https://www.theguardian.com/science/2026/nov/19/potatoes-moon-base-nasa"] },
+    { "region": "Europe", "place": "Football", "lat": 45.76, "lon": 4.84, "text": "Lyon beat Arsenal 2-0 (women’s CL)", "by": "BBC", "src": ["https://www.bbc.co.uk/sport/football/videos/c3dx1n4xp1xxo"] }
   ]
 }
