@@ -1,37 +1,45 @@
 {
   "date": "Thursday 19 November 2026",
+  "tagline": "Trump, Xi and Putin meet in Shenzhen · UN court finds Myanmar guilty of genocide · Crimean Bridge hit again",
+  "figures": [
+    { "n": "90 min", "t": "Trump–Xi–Putin talks", "s": "BBC" },
+    { "n": "9–6", "t": "ICJ judges’ vote", "s": "BBC" },
+    { "n": "$81bn", "t": "record Anthropic sale", "s": "BBC" },
+    { "n": "3rd", "t": "bridge strike this week", "s": "BBC" },
+    { "n": "99/100", "t": "GTA VI on Metacritic", "s": "BBC" },
+    { "n": "31.5m", "t": "acres of seabed leased", "s": "NYT" }
+  ],
   "dateCheck": [
-    "Trump lands in China for the summit (18 Nov)",
-    "Miami verdict in Haiti president plot (18 Nov)",
-    "US–Venezuela military pact signed (18 Nov)",
-    "Van Gogh sells for $190.4m in New York (18 Nov)",
-    "Ukraine's strike on the Crimean Bridge (earlier in the week)"
+    "Trump lands in China (18 Nov)",
+    "Anthropic prices its IPO at $83 (18 Nov)",
+    "Haiti president plot verdict, Miami (18 Nov)",
+    "US–Venezuela military pact (18 Nov)",
+    "Van Gogh sells for $190.4m (18 Nov)",
+    "Crimean Bridge road section collapses (17 Nov)"
   ],
   "sources": "BBC, Guardian, NYT, DW, CBS, NPR, ABC Australia, RNZ, MercoPress, Addis Standard",
   "leads": [
     {
-      "art": "summit",
-      "region": "Asia",
-      "field": "Politics",
-      "place": "Shenzhen, China",
+      "art": "summit", "label": "APEC · SHENZHEN",
+      "region": "Asia", "field": "Summit", "place": "Shenzhen, China",
       "lat": 22.54, "lon": 114.06,
       "head": "Trump, Xi and Putin hold first three-way summit",
-      "deck": "Their joint ‘peace declaration’ says a nuclear war ‘cannot be won’ and pledges more oil supply, but names neither the Ukraine war nor the Iran war.",
+      "deck": "In 90 minutes they agreed a ‘peace declaration’: nuclear war ‘cannot be won’, more oil, UN reform. No word on Ukraine or Iran.",
+      "by": "BBC, Guardian",
       "src": [
+        "https://www.bbc.co.uk/news/articles/c623j4ln97x7o",
         "https://www.theguardian.com/world/2026/nov/19/china-russia-us-agree-peace-statement-no-mention-ukraine-iran-wars",
         "https://www.nytimes.com/2026/11/19/world/europe/trump-xi-putin-nuclear-weapons-ukraine.html",
-        "https://www.bbc.co.uk/news/articles/c623j4ln97x7o",
         "https://www.cbsnews.com/news/trump-xi-putin-china-apec-summit/"
       ]
     },
     {
-      "art": "court",
-      "region": "Europe",
-      "field": "Justice",
-      "place": "The Hague",
+      "art": "court", "label": "WORLD COURT · THE HAGUE",
+      "region": "Europe", "field": "Justice", "place": "The Hague",
       "lat": 52.08, "lon": 4.3,
       "head": "Myanmar guilty of Rohingya genocide, UN court rules",
-      "deck": "First state ever found guilty of genocide by an international court; The Gambia brought the case over the 2017 army crackdown.",
+      "deck": "By 9 votes to 6, judges found intent to destroy the Rohingya in the 2017 crackdown: the first state ever found guilty of genocide.",
+      "by": "BBC",
       "src": [
         "https://www.bbc.co.uk/news/articles/c804wzp20ddvo",
         "https://www.theguardian.com/world/2026/nov/19/genocide-rohingya-international-court-of-justice-ruling-myanmar",
@@ -39,13 +47,12 @@
       ]
     },
     {
-      "art": "market",
-      "region": "N. America",
-      "field": "Markets",
-      "place": "New York",
+      "art": "market", "label": "NASDAQ · FIRST DAY",
+      "region": "N. America", "field": "Markets", "place": "New York",
       "lat": 40.71, "lon": -74.01,
       "head": "Anthropic shares close up 17% on Nasdaq debut",
-      "deck": "The Claude maker, the first purely AI company to list, raised a record $81bn at $83 a share; DW says trading valued it at about $2 trillion.",
+      "deck": "The Claude maker, the first purely AI firm to list, raised a record $81bn at $83 a share; DW says trading valued it at about $2 trillion.",
+      "by": "BBC, DW",
       "src": [
         "https://www.bbc.co.uk/news/articles/c6742m39xgzxo",
         "https://www.dw.com/en/anthropic-trading-tests-investors-appetite-for-ai/a-79993163",
@@ -55,13 +62,12 @@
   ],
   "tiles": [
     {
-      "art": "bridge",
-      "region": "Europe",
-      "field": "War",
-      "place": "Russia / Ukraine",
-      "lat": 50.45, "lon": 30.52,
-      "head": "Putin rules out ceasefire talks after bridge strike",
-      "deck": "Vows ‘far more painful’ reply; drones hit Kyiv embassies",
+      "art": "bridge", "label": "CRIMEAN BRIDGE",
+      "region": "Europe", "field": "War", "place": "Crimea / Kyiv",
+      "lat": 45.3, "lon": 36.5,
+      "head": "Putin vows ‘far more painful’ reply",
+      "deck": "Crimean Bridge hit a 3rd time this week; Kyiv embassies damaged",
+      "by": "BBC, NYT",
       "src": [
         "https://www.bbc.co.uk/news/articles/cm879dqn3e1jo",
         "https://www.cbsnews.com/news/putin-russia-ukraine-bridge-strike/",
@@ -69,116 +75,109 @@
       ]
     },
     {
-      "art": "gaza",
-      "region": "Middle East",
-      "field": "Conflict",
-      "place": "Gaza",
+      "art": "gaza", "label": "YELLOW LINE",
+      "region": "Middle East", "field": "Conflict", "place": "Central Gaza",
       "lat": 31.42, "lon": 34.35,
-      "head": "Israeli troops end raid past Gaza’s ‘Yellow Line’",
-      "deck": "Israel says it targeted a tunnel; Hamas calls it a ceasefire breach",
+      "head": "Israel ends raid past Gaza’s ‘Yellow Line’",
+      "deck": "Says it targeted a tunnel; Hamas calls it a ‘flagrant violation’",
+      "by": "BBC",
       "src": [
         "https://www.bbc.co.uk/news/articles/cw8r7510degno",
         "https://www.theguardian.com/world/2026/nov/18/israeli-tanks-cross-yellow-line-boundary-into-hamas-controlled-central-gaza"
       ]
     },
     {
-      "art": "tanker",
-      "region": "Middle East",
-      "field": "War / Energy",
-      "place": "Strait of Hormuz",
+      "art": "tanker", "label": "STRAIT OF HORMUZ",
+      "region": "Middle East", "field": "War / Energy", "place": "Gulf",
       "lat": 26.57, "lon": 56.25,
       "head": "Iran steps up attacks on ships in Hormuz",
-      "deck": "NPR: Tehran also launches strikes around the Gulf",
+      "deck": "Tehran also launches strikes on countries around the Gulf",
+      "by": "NPR, NYT",
       "src": [
         "https://www.npr.org/2026/11/19/nx-s1-6044206/irans-attacks-on-ships-in-the-strait-of-hormuz-escalate",
         "https://www.nytimes.com/2026/11/19/business/iran-tanker-attack-strait-of-hormuz.html"
       ]
     },
     {
-      "art": "climate",
-      "region": "Global",
-      "field": "Climate",
-      "place": "COP31, Turkey",
+      "art": "climate", "label": "COP31 · TURKEY",
+      "region": "Global", "field": "Climate", "place": "UN climate talks",
       "lat": 36.9, "lon": 30.7,
       "head": "Fossil fuels cut from COP31 draft deal",
-      "deck": "New UN text drops all mention of coal, oil and gas",
+      "deck": "New text drops all mention of coal, oil and gas",
+      "by": "DW",
       "src": [
         "https://www.dw.com/en/no-mention-of-fossil-fuels-in-latest-cop31-draft-deal/a-79992394"
       ]
     },
     {
-      "art": "mine",
-      "region": "Africa",
-      "field": "Business",
-      "place": "Mrima Hill, Kenya",
+      "art": "mine", "label": "MRIMA HILL",
+      "region": "Africa", "field": "Business", "place": "Kenya",
       "lat": -4.48, "lon": 39.25,
-      "head": "US group beats Chinese rivals to Kenya deal",
-      "deck": "BBC: site estimated to hold over $60bn in critical minerals",
+      "head": "US group beats Chinese rivals to Kenya minerals",
+      "deck": "Frontier Minerals wins site with est. $60bn+ in deposits",
+      "by": "BBC",
       "src": [
         "https://www.bbc.co.uk/news/articles/cm9q84gp0gr3o"
       ]
     },
     {
-      "art": "pacific",
-      "region": "Oceania",
-      "field": "Disaster",
-      "place": "Tonga / Cook Islands",
+      "art": "pacific", "label": "TONGA · COOK ISLANDS",
+      "region": "Oceania", "field": "Disaster", "place": "South Pacific",
       "lat": -21.14, "lon": -175.2,
       "head": "Tonga and Cook Islands declare emergencies",
       "deck": "El Niño drought in Tonga; Cyclone Xavier nears Nassau",
+      "by": "RNZ",
       "src": [
         "https://www.rnz.co.nz/news/pacific/2683569/a-natural-hazard-tonga-declares-state-of-emergency-as-el-nino-drought-worsens",
         "https://www.rnz.co.nz/news/pacific/2705528/cook-islands-declares-state-of-emergency-for-nassau-as-cyclone-xavier-approaches"
       ]
     },
     {
-      "art": "game",
-      "region": "Global",
-      "field": "Culture",
-      "place": "Worldwide",
-      "head": "Grand Theft Auto VI goes on sale worldwide",
-      "deck": "Rockstar’s game, 13 years in the making, is released",
+      "art": "game", "label": "GTA VI · OUT NOW",
+      "region": "Global", "field": "Culture", "place": "Worldwide",
+      "head": "GTA VI goes on sale and scores 99 on Metacritic",
+      "deck": "Rockstar’s game, 13 years in the making, launched at midnight",
+      "by": "BBC",
       "src": [
         "https://www.bbc.co.uk/news/articles/c6z74ep2n17zo"
       ]
     },
     {
-      "art": "fifa",
-      "region": "Global",
-      "field": "Sport",
-      "place": "FIFA, Zurich",
+      "art": "fifa", "label": "FIFA ELECTION 2027",
+      "region": "Global", "field": "Sport", "place": "FIFA, Zurich",
       "lat": 47.38, "lon": 8.54,
       "head": "Two rivals challenge Infantino at FIFA",
       "deck": "Diallo and Tashima named for the March 2027 vote",
+      "by": "ABC",
       "src": [
         "https://www.abc.net.au/news/2026-11-19/fifa-president-challenge-candidates-infantino-diallo-tashima/107406458"
       ]
     }
   ],
   "briefs": [
-    { "region": "Europe", "place": "Berlin", "lat": 52.52, "lon": 13.4, "text": "Allies back Kyiv, seek a seat at peace talks", "src": ["https://www.dw.com/en/european-leaders-present-united-front-in-push-for-peace-in-ukraine/live-79986520"] },
-    { "region": "Europe", "place": "Denmark", "lat": 55.68, "lon": 12.57, "text": "MPs back US–Greenland security deal", "src": ["https://www.cbsnews.com/news/greenland-security-deal-us-denmark-danish-lawmakers/"] },
-    { "region": "N. America", "place": "Greenland", "lat": 64.18, "lon": -51.72, "text": "Votes to move clocks an hour nearer US", "src": ["https://www.nytimes.com/2026/11/19/world/europe/greenland-time-zone-change-us.html"] },
-    { "region": "Europe", "place": "EU", "lat": 50.85, "lon": 4.35, "text": "Commission targeted by AI-made cyberattack", "src": ["https://www.dw.com/en/eu-commission-confirms-it-was-targeted-in-cyberattack-using-ai-tools/a-79993016"] },
-    { "region": "Europe", "place": "UK", "lat": 51.51, "lon": -0.13, "text": "Covid inquiry: test-and-trace ‘doomed to fail’", "src": ["https://www.bbc.co.uk/news/articles/crx20q8ql4gwo"] },
-    { "region": "Middle East", "place": "Riyadh", "lat": 24.71, "lon": 46.68, "text": "Houthi attack hits Saudi wealth fund tower", "src": ["https://www.nytimes.com/2026/11/19/world/middleeast/saudi-pif-riyadh-tower-houthis-attack.html"] },
-    { "region": "N. America", "place": "US Senate", "lat": 38.9, "lon": -77.04, "text": "Republicans block curbs on Iran war", "src": ["https://www.nytimes.com/2026/11/19/us/politics/senate-iran-war-powers-trump.html"] },
-    { "region": "Asia", "place": "Bangladesh", "lat": 23.81, "lon": 90.41, "text": "Blasts, arson in pro-Hasina shutdown", "src": ["https://www.theguardian.com/world/2026/nov/19/bangladesh-violent-protest-sheikh-hasina-planned-return"] },
-    { "region": "Africa", "place": "Senegal", "lat": 14.7, "lon": -17.45, "text": "Migrant boat sinks; dozens missing", "src": ["https://www.bbc.co.uk/news/articles/c58j484089ewo"] },
-    { "region": "Africa", "place": "Ethiopia", "lat": 8.5, "lon": 39.5, "text": "Red Cross: Oromia crisis worsening", "src": ["https://allafrica.com/stories/202611190303.html"] },
-    { "region": "Africa", "place": "Kenya", "lat": -1.29, "lon": 36.82, "text": "Jepchirchir gets 3-year doping ban", "src": ["https://www.bbc.co.uk/sport/athletics/articles/cv5y1e1zle88o", "https://www.abc.net.au/news/2026-11-19/sydney-marathon-winner-peres-jepchirchir-three-year-doping-ban/107405856"] },
-    { "region": "Global", "place": "IMF", "text": "Global public debt nearing 100% of GDP", "src": ["https://en.mercopress.com/2026/11/19/imf-warns-global-debt-will-soon-reach-100-of-gdp-the-highest-since-world-war-ii"] },
-    { "region": "N. America", "place": "California", "lat": 37.4, "lon": -122.0, "text": "Probe into Nvidia AI chips in China", "src": ["https://www.bbc.co.uk/news/articles/cqn70vxp5p4no"] },
-    { "region": "N. America", "place": "JPMorgan", "text": "Customer data exposed in hack", "src": ["https://www.nytimes.com/2026/11/19/business/jpmorgan-chase-customer-data-breach.html"] },
-    { "region": "Oceania", "place": "Pacific", "lat": -14.27, "lon": -170.7, "text": "US leases 31.5m acres of seabed to miner", "src": ["https://www.nytimes.com/2026/11/19/climate/metals-company-seafloor-mining-auction.html"] },
-    { "region": "Asia", "place": "Japan", "lat": 35.68, "lon": 139.69, "text": "Russian seizure costs Japan Tobacco $8.6bn", "src": ["https://www.nytimes.com/2026/11/19/business/russia-japan-tobacco-loss.html"] },
-    { "region": "Oceania", "place": "New Zealand", "lat": -34.9, "lon": 173.0, "text": "Sperm whales die in mass stranding", "src": ["https://www.rnz.co.nz/news/environment/2704224/more-sperm-whales-die-after-mass-stranding-at-ninety-mile-beach"] },
-    { "region": "Global", "place": "Science", "text": "Potatoes grown in simulated Moon soil", "src": ["https://www.theguardian.com/science/2026/nov/19/potatoes-moon-base-nasa"] },
-    { "region": "N. America", "place": "Cincinnati", "lat": 39.1, "lon": -84.5, "text": "Fiona the hippo dies after swallowing a hat", "src": ["https://www.bbc.co.uk/news/articles/cwz0k3172xzko"] },
-    { "region": "N. America", "place": "Baseball", "text": "Trump pardons the late Pete Rose", "src": ["https://www.bbc.co.uk/news/articles/cx1l0pm7l9jmo"] },
-    { "region": "Europe", "place": "Football", "lat": 45.76, "lon": 4.84, "text": "Lyon beat Arsenal 2-0 (women’s CL)", "src": ["https://www.bbc.co.uk/sport/football/videos/c3dx1n4xp1xxo"] },
-    { "region": "Middle East", "place": "U-17 World Cup", "lat": 25.29, "lon": 51.53, "text": "Australia beat Argentina 2-0", "src": ["https://www.abc.net.au/news/2026-11-20/australia-defeats-argentina-under-17-world-cup/107407632"] },
-    { "region": "Asia", "place": "AFC awards", "lat": 13.76, "lon": 100.5, "text": "Foord is international player of the year", "src": ["https://www.abc.net.au/news/2026-11-20/matildas-star-foord-named-best-international-player-in-asia/107407140"] },
-    { "region": "Europe", "place": "Darts", "lat": 52.59, "lon": -2.13, "text": "Unseeded Sykes knocks out Humphries", "src": ["https://www.bbc.co.uk/sport/darts/articles/ckzd9n5996zno"] }
+    { "region": "Europe", "place": "Berlin", "lat": 52.52, "lon": 13.4, "text": "Allies back Kyiv, seek seat at peace talks", "by": "DW", "src": ["https://www.dw.com/en/european-leaders-present-united-front-in-push-for-peace-in-ukraine/live-79986520"] },
+    { "region": "Europe", "place": "Denmark", "lat": 55.68, "lon": 12.57, "text": "MPs back US–Greenland security deal", "by": "CBS", "src": ["https://www.cbsnews.com/news/greenland-security-deal-us-denmark-danish-lawmakers/"] },
+    { "region": "N. America", "place": "Greenland", "lat": 64.18, "lon": -51.72, "text": "Votes to move clocks an hour nearer US", "by": "NYT", "src": ["https://www.nytimes.com/2026/11/19/world/europe/greenland-time-zone-change-us.html"] },
+    { "region": "Europe", "place": "EU", "lat": 50.85, "lon": 4.35, "text": "Commission targeted by AI-made cyberattack", "by": "DW", "src": ["https://www.dw.com/en/eu-commission-confirms-it-was-targeted-in-cyberattack-using-ai-tools/a-79993016"] },
+    { "region": "Europe", "place": "UK", "lat": 51.51, "lon": -0.13, "text": "Covid inquiry: test-and-trace ‘doomed to fail’", "by": "BBC", "src": ["https://www.bbc.co.uk/news/articles/crx20q8ql4gwo"] },
+    { "region": "Middle East", "place": "Riyadh", "lat": 24.71, "lon": 46.68, "text": "Houthi attack hits Saudi wealth fund tower", "by": "NYT", "src": ["https://www.nytimes.com/2026/11/19/world/middleeast/saudi-pif-riyadh-tower-houthis-attack.html"] },
+    { "region": "N. America", "place": "US Senate", "lat": 38.9, "lon": -77.04, "text": "Republicans block curbs on Iran war", "by": "NYT", "src": ["https://www.nytimes.com/2026/11/19/us/politics/senate-iran-war-powers-trump.html"] },
+    { "region": "Asia", "place": "Bangladesh", "lat": 23.81, "lon": 90.41, "text": "Blasts, arson in Hasina shutdown", "by": "Guardian", "src": ["https://www.theguardian.com/world/2026/nov/19/bangladesh-violent-protest-sheikh-hasina-planned-return"] },
+    { "region": "Africa", "place": "South Africa", "lat": -23.9, "lon": 29.45, "text": "Race to replant 5 dug-up baobabs", "by": "Guardian", "src": ["https://www.theguardian.com/environment/2026/nov/19/baobab-five-trees-south-africa-dug-up-export-blocked-georgia-aoe"] },
+    { "region": "Africa", "place": "Ethiopia", "lat": 8.5, "lon": 39.5, "text": "Red Cross: Oromia crisis worse", "by": "Addis Std", "src": ["https://allafrica.com/stories/202611190303.html"] },
+    { "region": "Africa", "place": "Kenya", "lat": -1.29, "lon": 36.82, "text": "Jepchirchir gets 3-year doping ban", "by": "BBC", "src": ["https://www.bbc.co.uk/sport/athletics/articles/cv5y1e1zle88o", "https://www.abc.net.au/news/2026-11-19/sydney-marathon-winner-peres-jepchirchir-three-year-doping-ban/107405856"] },
+    { "region": "Global", "place": "IMF", "text": "Public debt nearing 100% of world GDP", "by": "MercoPress", "src": ["https://en.mercopress.com/2026/11/19/imf-warns-global-debt-will-soon-reach-100-of-gdp-the-highest-since-world-war-ii"] },
+    { "region": "N. America", "place": "California", "lat": 37.4, "lon": -122.0, "text": "Probe into Nvidia AI chips in China", "by": "BBC", "src": ["https://www.bbc.co.uk/news/articles/cqn70vxp5p4no"] },
+    { "region": "N. America", "place": "JPMorgan", "text": "Customer data exposed in hack", "by": "NYT", "src": ["https://www.nytimes.com/2026/11/19/business/jpmorgan-chase-customer-data-breach.html"] },
+    { "region": "Oceania", "place": "Pacific", "lat": -14.27, "lon": -170.7, "text": "US leases seabed off Samoa to miner", "by": "NYT", "src": ["https://www.nytimes.com/2026/11/19/climate/metals-company-seafloor-mining-auction.html"] },
+    { "region": "Asia", "place": "Japan", "lat": 35.68, "lon": 139.69, "text": "Russian seizure costs Japan Tobacco $8.6bn", "by": "NYT", "src": ["https://www.nytimes.com/2026/11/19/business/russia-japan-tobacco-loss.html"] },
+    { "region": "Oceania", "place": "New Zealand", "lat": -34.9, "lon": 173.0, "text": "Sperm whales die in mass stranding", "by": "RNZ", "src": ["https://www.rnz.co.nz/news/environment/2704224/more-sperm-whales-die-after-mass-stranding-at-ninety-mile-beach"] },
+    { "region": "Global", "place": "Science", "text": "Potatoes grown in simulated Moon soil", "by": "Guardian", "src": ["https://www.theguardian.com/science/2026/nov/19/potatoes-moon-base-nasa"] },
+    { "region": "N. America", "place": "Cincinnati", "lat": 39.1, "lon": -84.5, "text": "Hippo Fiona dies after swallowing hat", "by": "BBC", "src": ["https://www.bbc.co.uk/news/articles/cwz0k3172xzko"] },
+    { "region": "N. America", "place": "Baseball", "text": "Trump pardons the late Pete Rose", "by": "BBC", "src": ["https://www.bbc.co.uk/news/articles/cx1l0pm7l9jmo"] },
+    { "region": "Europe", "place": "Football", "lat": 45.76, "lon": 4.84, "text": "Lyon beat Arsenal 2-0 (women’s CL)", "by": "BBC", "src": ["https://www.bbc.co.uk/sport/football/videos/c3dx1n4xp1xxo"] },
+    { "region": "Middle East", "place": "U-17 World Cup", "lat": 25.29, "lon": 51.53, "text": "Australia beat Argentina 2-0", "by": "ABC", "src": ["https://www.abc.net.au/news/2026-11-20/australia-defeats-argentina-under-17-world-cup/107407632"] },
+    { "region": "Asia", "place": "AFC awards", "lat": 13.76, "lon": 100.5, "text": "Foord is international player of year", "by": "ABC", "src": ["https://www.abc.net.au/news/2026-11-20/matildas-star-foord-named-best-international-player-in-asia/107407140"] },
+    { "region": "Europe", "place": "Darts", "lat": 52.59, "lon": -2.13, "text": "Unseeded Sykes knocks out Humphries", "by": "BBC", "src": ["https://www.bbc.co.uk/sport/darts/articles/ckzd9n5996zno"] }
   ]
 }

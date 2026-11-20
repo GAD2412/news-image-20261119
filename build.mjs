@@ -82,12 +82,12 @@ const ART = {
     ${[12, 20, 28, 36, 44].map((y) => `<line x1="8" y1="${y}" x2="48" y2="${y}" stroke="#b9c3bb" stroke-width="2"/>`).join('')}</g>
     <g transform="translate(132,10)"><rect width="34" height="48" rx="4" fill="#222"/><rect y="12" width="34" height="4" fill="#555"/><rect y="32" width="34" height="4" fill="#555"/>
     <circle cx="17" cy="24" r="27" fill="none" stroke="#d63b2f" stroke-width="5"/><line x1="-2" y1="5" x2="36" y2="43" stroke="#d63b2f" stroke-width="5"/></g>
-    <circle cx="214" cy="20" r="10" fill="#4b9a5a"/><path d="M206 18 q6 -4 10 2 q4 -2 6 2" stroke="#e3efe5" stroke-width="2" fill="none"/>`,
+`,
   mine: () => `<rect width="244" height="70" fill="#e9f0dc"/><path d="M0 56 Q60 6 130 30 Q180 46 244 40 L244 70 L0 70 Z" fill="#5f9a46"/>
     <path d="M0 62 L244 58 L244 70 L0 70 Z" fill="#b58b5a"/>
-    <g transform="translate(150,38)"><rect x="0" y="6" width="44" height="14" fill="#f2b632"/><path d="M0 6 L8 -6 L44 -6 L44 6 Z" fill="#d99a1e"/><rect x="44" y="4" width="16" height="16" fill="#f2b632"/><rect x="48" y="7" width="8" height="6" fill="#bfe1f2"/>
+    <g transform="translate(18,30)"><rect x="0" y="6" width="44" height="14" fill="#f2b632"/><path d="M0 6 L8 -6 L44 -6 L44 6 Z" fill="#d99a1e"/><rect x="44" y="4" width="16" height="16" fill="#f2b632"/><rect x="48" y="7" width="8" height="6" fill="#bfe1f2"/>
     <circle cx="10" cy="22" r="6" fill="#333"/><circle cx="50" cy="22" r="6" fill="#333"/></g>
-    <g transform="translate(60,34)"><path d="M0 12 L8 0 L16 12 L8 22 Z" fill="#7d5fc4"/><path d="M14 16 L20 6 L26 16 L20 24 Z" fill="#c95fa6"/><path d="M-12 18 L-6 10 L0 18 L-6 24 Z" fill="#4fa3c4"/></g>`,
+    <g transform="translate(118,10)"><path d="M0 12 L8 0 L16 12 L8 22 Z" fill="#7d5fc4"/><path d="M14 16 L20 6 L26 16 L20 24 Z" fill="#c95fa6"/><path d="M-12 18 L-6 10 L0 18 L-6 24 Z" fill="#4fa3c4"/></g>`,
   pacific: () => `<rect width="122" height="70" fill="#f5d9a8"/><rect x="122" width="122" height="70" fill="#bcd6e8"/>
     <circle cx="36" cy="18" r="11" fill="#f39c12"/>${[0, 45, 90, 135, 180, 225, 270, 315].map((a) => `<line x1="36" y1="18" x2="${36 + 17 * Math.cos(a * Math.PI / 180)}" y2="${18 + 17 * Math.sin(a * Math.PI / 180)}" stroke="#f39c12" stroke-width="2"/>`).join('')}
     <rect y="46" width="122" height="24" fill="#c9995a"/><path d="M10 52 l14 6 -6 8 M40 50 l8 10 14 -2 M70 54 l10 8 M90 50 l-6 10 12 4" stroke="#7a5530" stroke-width="1.5" fill="none"/>
@@ -147,11 +147,13 @@ function mapSvg() {
 }
 
 // ---------- page ----------
-const lead = (s) => `<div class="lead"><div class="pic">${art(s.art, 324, 104)}<span class="num" style="background:${COLOR[s.region]}">${s.n}</span></div>
-  <div class="tag" style="color:${COLOR[s.region]}">${esc(s.place)} · ${esc(s.field)}</div><h2 class="hd">${esc(s.head)}</h2><p class="deck">${esc(s.deck)}</p></div>`;
-const tile = (s) => `<div class="tile"><div class="pic">${art(s.art, 244, 66)}<span class="num sm" style="background:${COLOR[s.region]}">${s.n}</span></div>
-  <div class="tag one" style="color:${COLOR[s.region]}">${esc(s.place)} · ${esc(s.field)}</div><h3 class="hd">${esc(s.head)}</h3><p class="deck">${esc(s.deck)}</p></div>`;
-const brief = (s) => `<li class="one"><span class="bn" style="background:${COLOR[s.region]}">${s.n}</span><b>${esc(s.place)}</b> ${esc(s.text)}</li>`;
+const by = (s) => ` <i class="by">— ${esc(s.by)}</i>`;
+const lead = (s) => `<div class="lead"><div class="pic">${art(s.art, 324, 96)}<span class="num" style="background:${COLOR[s.region]}">${s.n}</span><span class="lab">${esc(s.label)}</span></div>
+  <div class="tag" style="color:${COLOR[s.region]}">${esc(s.place)} · ${esc(s.field)}</div><h2 class="hd">${esc(s.head)}</h2><p class="deck">${esc(s.deck)}${by(s)}</p></div>`;
+const tile = (s) => `<div class="tile"><div class="pic">${art(s.art, 244, 60)}<span class="num sm" style="background:${COLOR[s.region]}">${s.n}</span><span class="lab sm">${esc(s.label)}</span></div>
+  <div class="tag one" style="color:${COLOR[s.region]}">${esc(s.place)} · ${esc(s.field)}</div><h3 class="hd">${esc(s.head)}</h3><p class="deck">${esc(s.deck)}${by(s)}</p></div>`;
+const brief = (s) => `<li class="one"><span class="bn" style="background:${COLOR[s.region]}">${s.n}</span><b>${esc(s.place)}</b> ${esc(s.text)}${by(s)}</li>`;
+const fig = (f) => `<div class="fig"><b>${esc(f.n)}</b><span class="one">${esc(f.t)} <i class="by">${esc(f.s)}</i></span></div>`;
 const half = Math.ceil(S.briefs.length / 2);
 
 const html = `<!doctype html><html><head><meta charset="utf-8"><style>
@@ -159,53 +161,63 @@ const html = `<!doctype html><html><head><meta charset="utf-8"><style>
 html,body{width:1024px;height:1024px;overflow:hidden;background:#f3efe6}
 body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#15171c;position:relative}
 .serif{font-family:Georgia,"Times New Roman",serif}
-#mast{position:absolute;left:0;top:0;width:1024px;height:122px;background:#13233f;color:#fff;padding:8px 18px 0}
+#mast{position:absolute;left:0;top:0;width:1024px;height:118px;background:#13233f;color:#fff;padding:7px 18px 0}
 #kick{font-size:13px;letter-spacing:.18em;font-weight:700;color:#f2c94c;display:flex;justify-content:space-between}
 #kick span:last-child{color:#c9d3e3;letter-spacing:.06em;font-weight:500}
-#date{font-family:Georgia,serif;font-weight:700;white-space:nowrap;line-height:1;margin-top:3px;display:inline-block}
-#bar{position:absolute;left:18px;right:18px;bottom:7px;display:flex;gap:6px}
-.pill{font-size:12.5px;font-weight:700;color:#fff;border-radius:10px;padding:2px 8px;white-space:nowrap}
-#leads{position:absolute;left:12px;top:130px;width:1000px;display:flex;gap:14px}
-.lead{width:324px;height:236px;background:#fffdf8;border:1px solid #d8d0bf;border-radius:6px;overflow:hidden}
+#date{font-family:Georgia,serif;font-weight:700;white-space:nowrap;line-height:1;margin-top:2px;display:inline-block}
+#tagline{font-family:Georgia,serif;font-style:italic;font-size:15px;color:#f3e3b0;margin-top:3px}
+#figs{position:absolute;left:12px;top:123px;width:1000px;height:42px;display:flex;gap:6px}
+.fig{flex:1 1 0;min-width:0;background:#fffdf8;border:1px solid #d8d0bf;border-top:3px solid #13233f;border-radius:4px;padding:1px 7px;line-height:1}
+.fig b{display:block;font-family:Georgia,serif;font-size:19px;color:#13233f;line-height:21px}
+.fig span{display:block;font-family:"Avenir Next Condensed","Arial Narrow",sans-serif;font-size:12px;color:#333;line-height:14px}
+.by{font-style:italic;color:#7a7465;font-size:.9em;white-space:nowrap}
+.pill{font-size:11px;font-weight:700;color:#fff;border-radius:9px;padding:1px 7px;white-space:nowrap;display:inline-block;margin:0 3px 3px 0}
+#leads{position:absolute;left:12px;top:171px;width:1000px;display:flex;gap:14px}
+.lead{width:324px;height:232px;background:#fffdf8;border:1px solid #d8d0bf;border-radius:6px;overflow:hidden}
 .pic{position:relative;line-height:0}
+.lab{position:absolute;right:0;bottom:0;background:rgba(19,35,63,.9);color:#fff;font:800 12px/18px "Helvetica Neue",Arial,sans-serif;letter-spacing:.08em;padding:0 8px;border-top-left-radius:5px}
+.lab.sm{font-size:10.5px;line-height:15px;padding:0 6px}
 .num{position:absolute;left:6px;top:6px;min-width:24px;height:24px;border-radius:12px;color:#fff;font:700 14px/24px "Helvetica Neue",Arial,sans-serif;text-align:center;border:1.5px solid #fff}
 .num.sm{min-width:20px;height:20px;line-height:20px;font-size:12px;border-radius:10px}
 .tag{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin:6px 10px 0}
 .lead .hd{font-family:Georgia,serif;font-size:21px;line-height:24px;letter-spacing:-.2px;margin:2px 10px 0;font-weight:700}
-.lead .deck{font-size:13.5px;line-height:17px;margin:4px 10px 0;color:#33363d}
-#tiles{position:absolute;left:12px;top:372px;width:1000px;display:grid;grid-template-columns:repeat(4,244px);gap:6px 8.6px}
-.tile{width:244px;height:160px;background:#fffdf8;border:1px solid #d8d0bf;border-radius:6px;overflow:hidden}
+.lead .deck{font-size:13px;line-height:16.5px;margin:4px 10px 0;color:#33363d}
+#tiles{position:absolute;left:12px;top:408px;width:1000px;display:grid;grid-template-columns:repeat(4,244px);gap:6px 8.6px}
+.tile{width:244px;height:153px;background:#fffdf8;border:1px solid #d8d0bf;border-radius:6px;overflow:hidden}
 .tile .tag{margin:4px 8px 0;font-size:10.5px}
 .tile .hd{font-family:Georgia,serif;font-size:16.5px;line-height:19px;margin:1px 8px 0;font-weight:700}
 .tile .deck{font-size:12.5px;line-height:16px;margin:2px 8px 0;color:#33363d}
 .one{white-space:nowrap;overflow:hidden}
-#bottom{position:absolute;left:12px;top:704px;width:1000px;height:294px;display:flex;gap:10px}
-#mapbox{width:372px;flex:none;background:#fffdf8;border:1px solid #d8d0bf;border-radius:6px;padding:6px}
-.h4{font-size:11.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#13233f;margin-bottom:4px}
+#bottom{position:absolute;left:12px;top:725px;width:1000px;height:244px;display:flex;gap:10px}
+#mapbox{width:372px;flex:none;background:#fffdf8;border:1px solid #d8d0bf;border-radius:6px;padding:5px 6px}
+.h4{font-size:11.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#13233f;margin-bottom:3px}
 #legend{font-size:11px;color:#444;margin-top:3px}
-#check{margin-top:5px;border-top:1px solid #d8d0bf;padding-top:4px;font-size:11.5px;line-height:14.5px;color:#3d3d3d}
-#check b{color:#13233f}
+#pills{margin-top:4px}
+#check{position:absolute;left:12px;top:972px;width:1000px;height:30px;background:#fff4e0;border:1px solid #d9b26a;border-radius:4px;padding:2px 8px;font-size:11px;line-height:12.5px;color:#3d3d3d;overflow:hidden}
+#check b{color:#8a4b00}
 #briefs{flex:1;background:#fffdf8;border:1px solid #d8d0bf;border-radius:6px;padding:6px 8px}
 #briefs{min-width:0}
 #cols{display:flex;gap:12px}
 #cols ul{list-style:none;flex:1 1 0;min-width:0}
-#cols li{font-family:"Avenir Next Condensed","Arial Narrow",sans-serif;font-size:13px;line-height:21px;height:21px;color:#222}
+#cols li{font-family:"Avenir Next Condensed","Arial Narrow",sans-serif;font-size:13px;line-height:18px;height:18px;color:#222}
 #cols li b{font-weight:700;color:#000;margin-right:2px}
 .bn{display:inline-block;min-width:19px;height:16px;border-radius:8px;color:#fff;font:700 10.5px/16px "Helvetica Neue",Arial,sans-serif;text-align:center;margin-right:5px;vertical-align:1px}
-#foot{position:absolute;left:12px;right:12px;top:1000px;height:22px;font-size:10.5px;line-height:22px;color:#4a4a4a;white-space:nowrap;overflow:hidden}
+#foot{position:absolute;left:12px;right:12px;top:1003px;height:20px;font-size:10.5px;line-height:20px;color:#4a4a4a;white-space:nowrap;overflow:hidden}
 #fit{display:none}
 </style></head><body>
-<div id="mast"><div id="kick"><span>THE WORLD'S NEWS IN ONE IMAGE</span><span>${all.length} stories reported that day</span></div>
+<div id="mast"><div id="kick"><span>THE WORLD'S NEWS IN ONE IMAGE</span><span>${all.length} stories, all reported this day</span></div>
 <div id="datebox"><span id="date">${esc(S.date)}</span></div>
-<div id="bar">${REGIONS.filter((r) => counts[r]).map((r) => `<span class="pill" style="background:${COLOR[r]}">${r} ${counts[r]}</span>`).join('')}</div></div>
+<div id="tagline" class="one">${esc(S.tagline)}</div></div>
+<div id="figs">${S.figures.map(fig).join('')}</div>
 <div id="leads">${S.leads.map(lead).join('')}</div>
 <div id="tiles">${S.tiles.map(tile).join('')}</div>
 <div id="bottom">
  <div id="mapbox"><div class="h4">Where it happened</div>${mapSvg()}
-  <div id="legend">Numbered pins: stories 1–${S.leads.length + S.tiles.length} · dots: briefs · colour = region</div>
-  <div id="check"><b>Date check — earlier news, not counted here:</b> ${S.dateCheck.map(esc).join(' · ')}</div></div>
- <div id="briefs"><div class="h4">Also on 19 November</div><div id="cols"><ul>${S.briefs.slice(0, half).map(brief).join('')}</ul><ul>${S.briefs.slice(half).map(brief).join('')}</ul></div></div>
+  <div id="legend">Pins: stories 1–${S.leads.length + S.tiles.length} · dots: briefs · stories per region:</div>
+  <div id="pills">${REGIONS.filter((r) => counts[r]).map((r) => `<span class="pill" style="background:${COLOR[r]}">${r} ${counts[r]}</span>`).join('')}</div></div>
+ <div id="briefs"><div class="h4">Also on Thursday 19 November</div><div id="cols"><ul>${S.briefs.slice(0, half).map(brief).join('')}</ul><ul>${S.briefs.slice(half).map(brief).join('')}</ul></div></div>
 </div>
+<div id="check"><b>DATE CHECK — earlier days’ news, left out:</b> ${S.dateCheck.map(esc).join(' · ')}</div>
 <div id="foot" class="one">Every story was reported on Thursday 19 November 2026 (any time zone); disputed claims are attributed. Sources: ${esc(S.sources)}.</div>
 <pre id="fit"></pre>
 <script>
@@ -217,14 +229,14 @@ document.fonts.ready.then(() => {
   const bad = [];
   document.querySelectorAll('.one').forEach((e) => { if (e.scrollWidth > e.clientWidth + 1) bad.push('cut: ' + e.textContent.trim().slice(0, 60)); });
   document.querySelectorAll('.hd').forEach((e) => { const l = Math.round(e.getBoundingClientRect().height / parseFloat(getComputedStyle(e).lineHeight)); if (l > 2) bad.push('headline ' + l + ' lines: ' + e.textContent); });
-  document.querySelectorAll('.lead .deck').forEach((e) => { const l = Math.round(e.getBoundingClientRect().height / 17); if (l > 3) bad.push('lead deck ' + l + ' lines: ' + e.textContent.slice(0, 40)); });
-  document.querySelectorAll('.lead,.tile,#mapbox,#briefs').forEach((e) => { if (e.scrollHeight > e.clientHeight + 1) bad.push('overflow ' + (e.id || e.className) + ' by ' + (e.scrollHeight - e.clientHeight) + 'px: ' + e.textContent.trim().slice(0, 40)); });
-  const mast = document.getElementById('mast').getBoundingClientRect(), bar = document.getElementById('bar').getBoundingClientRect(), d = date.getBoundingClientRect();
-  if (d.bottom > bar.top - 2) bad.push('date overlaps region bar');
-  if (bar.right > mast.right - 10) bad.push('region bar too wide');
-  if (document.getElementById('bottom').getBoundingClientRect().bottom > document.getElementById('foot').getBoundingClientRect().top) bad.push('bottom runs into footer');
+  document.querySelectorAll('.lead .deck').forEach((e) => { const l = Math.round(e.getBoundingClientRect().height / 16.5); if (l > 3) bad.push('lead deck ' + l + ' lines: ' + e.textContent.slice(0, 40)); });
+  document.querySelectorAll('.lead,.tile,#mapbox,#briefs,#check,.fig,#mast').forEach((e) => { if (e.scrollHeight > e.clientHeight + 1) bad.push('overflow ' + (e.id || e.className) + ' by ' + (e.scrollHeight - e.clientHeight) + 'px: ' + e.textContent.trim().slice(0, 40)); });
+  document.querySelectorAll('.tile .deck').forEach((e) => { const l = Math.round(e.getBoundingClientRect().height / 16); if (l > 2) bad.push('tile deck ' + l + ' lines: ' + e.textContent.slice(0, 40)); });
+  const order = ['mast', 'figs', 'leads', 'tiles', 'bottom', 'check', 'foot'].map((id) => document.getElementById(id).getBoundingClientRect());
+  for (let i = 1; i < order.length; i++) if (order[i].top < order[i - 1].bottom) bad.push('block ' + i + ' overlaps the one above by ' + (order[i - 1].bottom - order[i].top) + 'px');
+  if (order[order.length - 1].bottom > 1024) bad.push('footer below 1024');
   if (document.documentElement.scrollHeight > 1024) bad.push('page taller than 1024');
-  document.querySelectorAll('#date,#bar,#leads,#tiles,#bottom,#foot').forEach((e) => { if (e.getBoundingClientRect().right > 1014) bad.push('too wide: ' + e.id); });
+  document.querySelectorAll('#date,#figs,#leads,#tiles,#bottom,#check,#foot').forEach((e) => { if (e.getBoundingClientRect().right > 1014) bad.push('too wide: ' + e.id); });
   document.getElementById('fit').textContent = 'FIT ' + JSON.stringify({ dateFont: fs, bad });
 });
 </script></body></html>`;
