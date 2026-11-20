@@ -1,0 +1,6 @@
+out/
+out2/
+build/
+transcripts*.tar.gz
+*.geojson
+.DS_Store
